@@ -1,0 +1,39 @@
+{
+  "name": "SlimBean",
+  "version": "1.0.0",
+  "description": "This is my personal project bootstrap repository. It is used to quickly create projects using my preferred system stack of RedBeanPHP (ORM), Slim (routing and middleware) and Twig (templating).",
+  "private": true,
+  "scripts": {
+    "build": "export NODE_ENV=production && webpack && postcss ./assets/public/css/app.css --output ./public/assets/css/styles.css & postcss ./assets/admin/css/admin.css --output ./public/assets/css/admin.css",
+    "watch": "webpack --watch & postcss ./assets/public/css/app.css --output ./public/assets/css/styles.css --watch & postcss ./assets/admin/css/admin.css --output ./public/assets/css/admin.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benmajor/SlimBean.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benmajor/SlimBean/issues"
+  },
+  "homepage": "https://github.com/benmajor/SlimBean#readme",
+  "dependencies": {
+    "@fancyapps/ui": "^4.0.31",
+    "chart.js": "^3.9.1",
+    "dompurify": "^2.4.0",
+    "jquery": "^3.6.1",
+    "marked": "^4.1.0",
+    "sortablejs": "^1.15.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.0.2",
+    "postcss-nested": "^5.0.6",
+    "tailwindcss": "^3.0.17",
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
